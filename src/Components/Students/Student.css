@@ -1,0 +1,11 @@
+.stu-root {
+  border: 1px solid;
+  padding: 8px;
+  display: inline-block;
+  margin: 8px;
+}
+
+.stu-root > img {
+  height: 200px;
+  width: 300px;
+}
