@@ -1,40 +1,28 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
 import "./App.css";
 
-// function component
-function App() {
-  const [count, setCount] = useState(0);
+// arrow syntax component - can also be created from a new file
+const SampleComponent = () => {
+  return <h3>Hi I am a sample Component</h3>;
+};
 
-  const name = "Sanjay S";
-  const role = "Mentor";
+// function component( which returns JSX element )
+
+function App() {
+  const batch = "FSD58WE2-TAMIL";
+  const mentor = "Sanjay";
 
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Name: {name}</h1>
-      <h1>Role: {role}</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <h1 className="border-big">Hello {batch}!!</h1>
+      <h2>Mentor: {mentor}</h2>
+      <label htmlFor="fname">Full Name</label>
+      <input type="text" id="fname" />
+      <h6>{10 / 5}</h6>
     </>
   );
 }
+
+// normal export
+export { SampleComponent };
 
 export default App;
