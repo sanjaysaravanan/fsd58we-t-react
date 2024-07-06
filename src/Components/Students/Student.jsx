@@ -59,7 +59,9 @@ const Student = ({ name, department, image, isPassedOut }) => {
 
       {/* Method 3 using && */}
       {isPassedOut && (
-        <h2 style={{ textDecoration: "line-through" }}>{name}</h2>
+        <h2 style={{ textDecoration: "line-through", backgroundColor: "#fff" }}>
+          {name}
+        </h2>
       )}
       {!isPassedOut && <h2>{name}</h2>}
       <h3>Department: {department}</h3>
