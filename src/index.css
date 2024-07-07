@@ -1,3 +1,7 @@
 .border-big {
   border: 2px solid green;
 }
+
+.bg-yellow {
+  background-color: yellow;
+}

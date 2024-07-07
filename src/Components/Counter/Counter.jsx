@@ -2,11 +2,9 @@ import { useState } from "react";
 import PropTypes from "prop-types";
 
 const Counter = ({ initialValue = 0 }) => {
-  /* 
+  /* // Wrong way of chaning the value in DOM
 
-  // Wrong way of chaning the value in DOM
-  
-  let count = 0;
+  let count = initialValue;
 
   const handleInc = () => {
     count = count + 1;
@@ -23,8 +21,8 @@ const Counter = ({ initialValue = 0 }) => {
 
   const handleInc = () => {
     setCount(count + 1);
-    // Worn Inspection
-    console.log("Count:", count); // this is will return the old value of count because setcount async in nature
+    // Worng Inspection
+    //console.log("Count:", count); // this is will return the old value of count because setcount async in nature
   };
 
   const handleDec = () => {
